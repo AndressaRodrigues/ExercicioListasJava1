@@ -15,7 +15,7 @@ public class App {
         int numFunc = sc.nextInt();
 
         for (int i = 0; i <numFunc; i++) {
-            System.out.println("Empregado #"+(i+1)+":");
+            System.out.println("Insira os dados do empregado #"+(i+1)+":");
             System.out.print("Id: ");
             Integer id = sc.nextInt();
             while(hasId(list, id)){

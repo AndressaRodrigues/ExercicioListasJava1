@@ -1,14 +1,4 @@
-## Getting Started
+Exercício do curso do Nélio Alves na Udemy.
+O objetivo do exercício era praticar os conceitos de Listas vistos em aula. Segui a resolução do nélio.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+O programa permite criar um mini cadastro de funcionários, com dados de Id, nome e salário; e alterar o salário deles por meio de método.
