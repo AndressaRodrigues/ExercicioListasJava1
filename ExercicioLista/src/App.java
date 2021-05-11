@@ -18,6 +18,10 @@ public class App {
             System.out.println("Empregado #"+(i+1)+":");
             System.out.print("Id: ");
             Integer id = sc.nextInt();
+            while(hasId(list, id)){
+                System.out.print("Este id já existe. Informe outro id: ");
+                id = sc.nextInt();
+            }
             System.out.print("Nome: ");
             sc.nextLine();
             String nome = sc.nextLine();
@@ -40,6 +44,11 @@ public class App {
             list.get(pos).aumentaSalario(porcentagem);
         }
 
+        System.out.println();
+        System.out.println("Lista de empregados: ");
+        for(Empregado e: list){
+            System.out.println(e);
+        }
 
         sc.close();
     }
@@ -51,5 +60,10 @@ public class App {
             } 
         }
         return null;
+    }
+
+    public static boolean hasId(List<Empregado> list, int id){
+        Empregado emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return emp != null;
     }
 }
